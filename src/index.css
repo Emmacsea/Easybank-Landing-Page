@@ -6,19 +6,19 @@
 @tailwind utilities;
 
 .btn {
-    @apply text-neutral-vlightgray text-lg text-center rounded-full py-2 px-7 bg-gradient-to-l from-primary-brightcyan to-primary-limegreen
+    @apply text-neutral-vlightgray md:text-lg text-base text-sm text-center rounded-full py-2 md:px-7 px-9 bg-gradient-to-l from-primary-brightcyan to-primary-limegreen
 }
 
 .p {
-    @apply text-neutral-grayishblue text-lg py-8 font-medium
+    @apply text-neutral-grayishblue md:text-lg py-8 font-medium text-base
 }
 
 .head {
-    @apply text-primary-darkblue text-lg font-semibold py-5
+    @apply text-primary-darkblue md:text-lg text-base font-semibold py-5
 }
 
 .det {
-    @apply text-neutral-grayishblue text-base font-medium
+    @apply text-neutral-grayishblue md:text-base text-sm font-medium
 }
 
 .name {
@@ -26,9 +26,9 @@
 }
 
 .re {
-    @apply text-primary-darkblue text-xl font-medium py-3
+    @apply text-primary-darkblue md:text-xl text-lg font-medium py-3
 }
 
 .de {
-    @apply text-neutral-grayishblue text-base font-semibold
+    @apply text-neutral-grayishblue md:text-base text-sm font-semibold
 }
