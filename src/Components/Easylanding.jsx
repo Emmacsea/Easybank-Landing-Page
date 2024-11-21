@@ -22,7 +22,7 @@ export default function Landing() {
 
   return (
     <div className="font-work">
-      <header className="flex justify-between items-center py-8 md:px-32 px-7 bg-neutral-white">
+      <header className="relative z-10 flex justify-between items-center py-8 md:px-32 px-7 bg-neutral-white ">
         <div>
           <img src={logo} alt="Page Logo"></img>
         </div>
@@ -64,7 +64,7 @@ export default function Landing() {
         </div>
 
         {isIcon && (
-          <nav className="md:hidden absolute bg-neutral-white inset-28 h-64 flex justify-center items-center rounded-md">
+          <nav className="md:hidden absolute bg-neutral-white inset-7 top-24  h-64 flex justify-center items-center rounded-md">
             <ul className="flex-col justify-center items-center space-y-4 text-center text-primary-darkblue text-lg font-medium">
               <li className="">
                 <a href="">Home </a>
@@ -87,8 +87,11 @@ export default function Landing() {
       </header>
 
       <main className="w-full ">
-        <div className=" bg-neutral-vlightgray md:pl-32 flex md:flex-row flex-col-reverse md:gap-56 justify-between items-center">
-          <div className="text-center md:text-start md:px-0 px-7 md:mt-0 mt-5">
+        <div className=" bg-neutral-vlightgray md:pl-32 flex md:flex-row flex-col md:gap-56 justify-between items-center">
+        <div className="md:hidden block absolute -top-11 px-7 -mx-6 bg-header-mobile  bg-cover ">
+            <img className="" src={back} alt="" />
+          </div>
+          <div className="text-center md:text-start md:px-0 px-7 md:mt-0 mt-80 md:mb-0 mb-10">
             <div>
               <h2 className="text-primary-darkblue md:text-6xl text-2xl font-semibold ">
                 Next generation digital banking
@@ -106,8 +109,8 @@ export default function Landing() {
             </div>
           </div>
 
-          <div className="  bg-header-desk bg-top bg-cover">
-            <img src={back} alt="" />
+          <div className="hidden md:block -mr-20 -mt-20 bg-header-desk bg-center bg-cover">
+            <img className="" src={back} alt="" />
           </div>
         </div>
 
